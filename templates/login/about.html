@@ -1,0 +1,48 @@
+{% extends 'login/loginBase.html' %}
+
+{% block website %}
+{% load static %}
+
+<div class="grid grid-rows-1 md:grid-rows-2 h-full">
+    <div class="flex flex-1 md:flex-1 justify-center items-center">
+        <div class="text-center pb-8">
+            <h5 class="text-4xl font-medium text-gray-900 dark:text-white p-8">About Us</h5>
+        </div>
+    </div>
+    <div class="flex flex-1 md:flex-1 justify-center items-center pb-8">
+        <div class="w-full max-w-xl p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white">Our Mission</h5>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+                At ProsperWise, our mission is to provide comprehensive investment solutions that empower individuals to achieve financial success. Our team of experienced professionals is dedicated to helping you make informed investment decisions.
+            </p>
+            <img src="{% static 'team.png' %}" alt="Our Team" class="w-full h-auto mt-4 rounded-lg shadow-md">
+
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white mt-8">Our Values</h5>
+            <ul class="list-disc pl-5 mt-4 text-gray-600 dark:text-gray-300">
+                <li>Integrity: We uphold the highest standards of integrity in all our actions.</li>
+                <li>Customer Focus: We value our customers and strive to meet their needs and exceed their expectations.</li>
+                <li>Innovation: We embrace innovation to create value and stay ahead in the market.</li>
+            </ul>
+            <img src="{% static 'values.png' %}" alt="Our Values" class="w-full h-auto mt-4 rounded-lg shadow-md">
+
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white mt-8">Our Team</h5>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+                Our team consists of experienced investment professionals who are passionate about helping our clients succeed. Meet our team and learn more about their expertise.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <div class="text-center">
+                    <img src="{% static 'team_member2.png' %}" alt="Team Member 2" class="w-32 h-32 mx-auto rounded-full shadow-md">
+                    <h6 class="mt-2 text-gray-900 dark:text-white">Jhone Doe</h6>
+                    <p class="text-gray-600 dark:text-gray-400">Chief Executive Officer</p>
+                </div>
+                <div class="text-center">
+                    <img src="{% static 'team_member2.png' %}" alt="Team Member 1" class="w-32 h-32 mx-auto rounded-full shadow-md">
+                    <h6 class="mt-2 text-gray-900 dark:text-white">Rohit</h6>
+                    <p class="text-gray-600 dark:text-gray-400">Software Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
